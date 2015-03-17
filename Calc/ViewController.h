@@ -9,5 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    float result;
+    IBOutlet UILabel *calcScreen;
+    int currentOperation;
+    float currentNumber;
+}
+
+-(IBAction)buttonDigitPressed:(id)sender;
+-(IBAction)buttonOperationPressed:(id)sender;
+-(IBAction)cancelInput;
+-(IBAction)cancelOperation;
 
 @end
